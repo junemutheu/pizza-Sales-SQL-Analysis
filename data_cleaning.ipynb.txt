@@ -1,0 +1,27 @@
+# Data Cleaning for Pizza Sales Dataset
+
+import pandas as pd
+
+# Load the dataset
+df = pd.read_csv("../data/pizza_sales.csv")
+
+# Show first rows
+print("Before cleaning:")
+print(df.head())
+
+# Check for null values
+print("\nNull values:")
+print(df.isnull().sum())
+
+# Convert order_date to datetime
+df['order_date'] = pd.to_datetime(df['order_date'])
+
+# Standardize pizza names (remove spaces, lowercase)
+df['pizza_name'] = df['pizza_name'].str.strip().str.lower()
+
+# Check dataset info
+print("\nAfter cleaning:")
+print(df.info())
+
+# Save cleaned dataset
+df.to_csv("../data/pizza_sales_cleaned.csv", index=False)
