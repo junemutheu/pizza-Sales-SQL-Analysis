@@ -1,0 +1,11 @@
+order_id,pizza_name,quantity,total_price,order_date
+1,Margherita,2,16.00,2025-08-01
+2,Pepperoni,1,12.00,2025-08-01
+3,Hawaiian,3,30.00,2025-08-02
+4,BBQ Chicken,2,24.00,2025-08-02
+5,Veggie,1,10.00,2025-08-03
+6,Margherita,4,32.00,2025-08-03
+7,Pepperoni,2,24.00,2025-08-04
+8,Hawaiian,1,10.00,2025-08-04
+9,BBQ Chicken,3,36.00,2025-08-05
+10,Veggie,2,20.00,2025-08-05
